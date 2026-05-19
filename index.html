@@ -6,28 +6,40 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
-    body{
-      margin:0;
-      background:#000;
-      display:flex;
-      justify-content:center;
-      align-items:center;
-      min-height:100vh;
+    body {
+      margin: 0;
+      background: #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
     }
 
-    img{
-      width:100%;
-      max-width:700px;
-      height:auto;
-      display:block;
+    .container {
+      display: flex;
+      flex-direction: column;
+      gap: 20px; /* space between images */
+      align-items: center;
+      padding: 20px;
+    }
+
+    img {
+      width: 100%;
+      max-width: 700px;
+      height: auto;
+      display: block;
+      border-radius: 10px; /* optional nice look */
     }
   </style>
 </head>
 
 <body>
 
-<img src="menu.jpg" alt="Menu">
-<img  src="menu1.jpg" alt="Menu 2">
-<img  src="menu3.jpg" alt="Menu 3">
+  <div class="container">
+    <img src="menu.jpg" alt="Menu 1">
+    <img src="menu2.jpg" alt="Menu 2">
+    <img src="menu3.jpg" alt="Menu 3">
+  </div>
+
 </body>
 </html>
